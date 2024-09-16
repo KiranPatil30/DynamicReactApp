@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+.containerh {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* background-color: rgba(17, 25, 40, 0.25); */
+  background-color: rgba(203, 207, 213, 0.25);
+  border-radius: 12px;
+  /* border: 1px solid rgba(255, 255, 255, 0.125);   */
+  border: 1px solid rgba(45, 38, 38, 0.247);
+  padding: 30px;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 25rem;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.banner-image {
+  /* background-image: url(https://images.unsplash.com/photo-1641326201918-3cafc641038e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80); */
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  /* border-radius: 12px; */
+  /* border: 1px solid rgba(255,255,255, 0.255) */
+}
+
+.h_1 {
+  /* font-family: 'Righteous', sans-serif; */
+  color: rgba(17, 13, 13, 0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.p-p {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-align: start;
+  font-size: 0.8rem;
+  line-height: 140%;
+  letter-spacing: 2px;
+  width: 300px;
+  font-weight: 600;
+}
+
+.button-wrapper {
+  margin-top: 18px;
+}
+
+.btn_b {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn_b+.btn_b {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  font-weight: bold;
+  color: rgba(17, 22, 22, 0.9);
+  border: 1px solid rgb(7, 9, 9);
+  transition: all .3s ease;
+  margin-right: 10px;
+
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;
+}
+
+.fill {
+  background: rgba(80, 111, 117, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.fill:hover {
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+  transition: all .3s ease;
+}
+
+/* card design  */
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+  width:100%;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.add_btn {
+  background-color: #F86F03;
+
+  width: 298px
+}
+
+.loader {
+  margin-top: 340px;
+  margin-left: 500px;
+  text-align: center;
+}
+.from-to{
+  text-align: center;
+}
+.from-to > p:first-child {
+  margin: 0 0 10px 0;
+  font-weight: bold; /* Styles for the first <p> (From date) */
+}
+
+.from-to > p:last-child {
+  margin: 0 0 15px 0;
+  font-weight: bold; /* Styles for the second <p> (To date) */
+}
+
+.add_btn .nav-link {
+  background: none;
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block; /* Ensure it stays as a block element within the button */
+}

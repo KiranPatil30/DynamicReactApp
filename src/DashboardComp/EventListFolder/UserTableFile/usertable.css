@@ -1,0 +1,53 @@
+.table_conte {
+    overflow-y: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
+    height: 76vh;
+    width: 175vh;
+}
+
+
+/* css for showupdateform */
+.main_model {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.close_updateformbtn {
+    background: none;
+    color: black;
+    text-align: end;
+    font-size: 25px;
+}
+
+.custom-modal-dialog {
+    max-width: 80% !important;
+}
+
+.custom-modal-content {
+    position: relative;
+}
+
+.custom-close-button {
+    text-align: end;
+    padding-right: 18px !important;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    z-index: 1050;
+    /* Ensure button is on top of other content */
+
+}
+
+.custom-modal-body {
+    /* max-height: 90vh; */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 0px 0px !important;
+
+}
+
+body.modal-open {
+    overflow: hidden;
+}

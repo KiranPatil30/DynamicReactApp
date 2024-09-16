@@ -1,0 +1,76 @@
+/* Default styles for desktop */
+.navbar-container {
+    position: fixed;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.navbar-container.hidden {
+    transform: translateX(-100%);
+    /* Hide navbar */
+}
+
+.toggle-button {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 5px;
+    left: 4px;
+    background-color: #f86f03;
+    /* Hover color */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 4px;
+    /* Ensure button is on top */
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+
+    margin-left: 14%;
+    height: 100vh;
+    /* Ensures the container takes the full height of the viewport */
+    padding: 20px;
+    /* Optional: Adds padding around the content */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        /* Show toggle button on mobile */
+    }
+
+    .navbar-container {
+        transform: translateX(-100%);
+        /* Hide navbar on mobile initially */
+    }
+
+    .navbar-container.visible {
+        transform: translateX(0);
+        /* Show navbar on toggle */
+    }
+
+    .content-container {
+        margin: 0px 10px !important;
+    }
+
+}
+
+/* Styles for tablets and medium-sized screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-container {
+        margin-left: 220px !important;
+    }
+}

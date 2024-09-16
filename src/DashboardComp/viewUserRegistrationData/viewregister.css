@@ -1,0 +1,58 @@
+.main_div_reg {
+    margin-top: 10px;
+}
+
+.back-userdata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    color: black;
+    border-radius: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(203, 207, 213, 0.25);
+    border: 1px solid rgba(45, 38, 38, 0.247); */
+    /* filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125)); */
+}
+
+.back_btn_user {
+    background-color: #F86F03;
+    border-radius: 4px;
+}
+
+.excel-btn {
+    background-color: #F86F03 !important;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.title-register {
+    float: right;
+    margin: 0px 20px;
+    text-transform: capitalize;
+}
+
+.rgister-table {
+    overflow-y: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
+    height: 76vh;
+    width: 175vh;
+    max-width: 100%;
+
+}
+
+.viewfilebtn {
+    background: #c9c9c9;
+    color: black;
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 0px 4px;
+}
+.table-head{
+    background-color: #54565c !important;
+}
